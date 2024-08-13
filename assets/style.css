@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SST,helvetica,arial,sans-serif;
+    background-color:greenyellow;
+    contain:content;
+}
+
+/* DEEL 1 */
+
+/* Sony banner */  
+
+.header-sony {
+    background-color: #000;
+    height: 32px;
+    position:relative;
+
+}
+
+.header-sony img {
+    width: 45px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+}
+
+/* Navigatie */ 
+.header-nav {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 60px;
+    background-color:#FFF;
+}
+
+
+
+.header-nav-items {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    align-content:space-around;  
+    padding: 20px;  
+}
+
+.header-nav-items ul {
+    list-style-type: none;
+    display: flex;
+    text-indent: 20px;
+    align-items: center;
+}
+.header-nav-items li {
+    display: inline-block;
+}
+
+
+.login-button {
+    display: flex;
+    background-color:#000;
+    border: 1px solid black;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: 7px;
+    margin-right: 20px;
+    
+}
+.search {
+    float: right;
+}
+
+/* Big banner */
+
+.big-banner {
+    background-image: url('../assets/img/deel1/hero-banner.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:712px;
+    width:100%;
+    background-color:#DEDEDE;
+}
+
+.big-banner-content {
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#FFF;
+    text-align:center;
+    padding-top:100px;
+
+}
+
+.big-banner-content h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.big-banner-button {
+    background-color: red;
+    color:#FFF;
+    font-weight: bold;
+    padding: 15px;
+    width:fit-content;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px
+}
+
+.banner-games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+
+.banner-games-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.banner-games-content img {
+    width: 256px;
+    height: auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    opacity: 0.5;
+}
+
+.banner-games-content-active {
+    opacity: 1 !important;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: rgb(52, 143, 235);
+    border-image: initial;
+    padding: 2px;
+}
+
+.news-banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/deel1/far-cry-banner.png);
+    height: 60rem;
+}
+.news-banner-content {
+    display: flex;
+    flex-direction: column;
+}
+.news-banner-header {
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 55rem;
+    padding: 5rem;
+}
+.news-banner-header-btn {
+    margin-top: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    width: 9rem;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.news-banner-header h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.news-banner-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.news-banner-header p {
+    font-family: Verdana, sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.news-banner-badges {
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    margin-top: 4rem;
+    gap: 1rem;
+}
+.news-banner-badges-content {
+    width: 31rem;
+    text-align: center;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.news-banner-badges-content img {
+    width: 31rem;
+    height: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-position: 75% center;
+    object-fit: cover;
+}
+
+.news-banner-badges-content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 0.5rem;
+}
+
+/*      DEEL 2      */
+.advert-banner {
+    display: flex;
+    flex-direction: row;
+    background-color:#FFF;
+    padding: 5rem;
+    justify-content: center;
+    font-family: SST,helvetica,arial,sans-serif;
+    color:#666;
+}
+
+.advert-banner p {
+    color: #0070D1;
+    text-align: center;
+    font-weight:bolder;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:.9rem;
+}
+
+.advert-banner h1 {
+    font-size:2rem;
+    font-weight:100;
+    text-align:center;
+    letter-spacing:1.5px;
+}
+
+.advert-banner p:nth-child(3) {
+    font-weight:100;
+    text-align:center;
+    text-transform:none;
+    margin-top:1rem;
+    letter-spacing:1px;
+    font-size:1.15rem;
+    color:#666;
+}
+
+.advert-content {
+    background-color:#FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.advert-content img {
+    width: 512px;
+}
+
+.advert-content-text {
+    font-family: SST,helvetica,arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    color:#666;
+    width:30%;
+}
+.advert-content-text h1 {
+
+    font-size:2rem;
+    font-weight:100;
+    letter-spacing:1.5px;
+    margin-bottom:2rem;
+    width: 100%;
+    
+}
+
+.advert-content-text p {
+    letter-spacing:1px;
+    font-size:1.25rem;
+    font-weight:100;
+    margin-bottom:2rem;
+}
+
+.advert-content-button {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #0070D1;
+    color: #FFF;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight:bold;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.advert-slider {
+    background-color: #FFF;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom:1.5rem;
+}
+
+.advert-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#999;
+    font-size:0.9em;
+    font-weight:bold;
+    width:250px;
+}
+.advert-slider p {
+    display: flex;
+    justify-content:center;
+}
+.advert-slider img {
+    object-fit: contain;
+    width:150px;
+    height:150px;
+}
+
+/* DEEL 3 */ 
+
+.game-content-header {
+    background-image: url('../assets/img/deel3/horizon-banner.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:800px;
+    width:100%;
+    background-color:#DEDEDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10rem;
+    font-family: SST,helvetica,arial,sans-serif;
+}
+
+.game-content-header-logo img {
+    height: 200px;
+    object-fit:cover;
+    margin-bottom:1.5rem;
+}
+
+.game-content-header-content {
+    color: #FFF;
+    width:650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-content-header-content h1 {
+    color: #FFF;
+    font-size:2.5rem;
+    font-weight:100;
+    letter-spacing: 2px;
+    align-items: left;
+    margin-bottom:1.5rem;
+}
+
+.game-content-header-content p {
+    color: #FFF;
+    font-size:1rem;
+    font-weight:100;
+    letter-spacing: 2px;
+    margin-bottom:1.5rem;
+}
+
+.game-content-header-button {
+    background-color:orangered;
+    width:fit-content;
+    padding: 8px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius:1rem;
+    font-weight:bold;
+}
+
+.game-content-container {
+    background-color: #000;
+    padding: 3rem;
+    color:#FFF;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.game-content-container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:2rem;
+    padding-left:5rem;
+    padding-right:5rem;
+}
+.game-content-container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.game-content-container-nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    font-size:2rem;
+}
+.game-content-container-nav h3 {
+    font-weight:700;
+}
+.game-content-container-nav p {
+    font-weight:100;
+    letter-spacing:1px;
+}
+.game-content-container-items {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.game-content-container-box {
+    display: flex;
+    flex-direction: column;    
+    width:250px;
+    height:300px;
+}
+
+.game-content-container-box p {
+    width:200px;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.game-content-container-box img {
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius:.5rem;
+}
+
+/* DEEL 4 */ 
+.explore-area {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color:#FFF;
+    padding: 5rem;
+}
+.explore-area-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    text-align: center;
+    font-weight: 100;
+    font-family: SST,helvetica,arial,sans-serif;
+    color:#333;
+}
+.explore-area-nav h1 {
+    
+    font-size: 2rem;
+    margin-bottom:1.5rem;
+}
+.explore-area-nav p {
+    font-size: 1rem;
+
+}
+.explore-area-content {
+    margin-top:3rem;
+    margin-bottom:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 10rem;
+}
+
+.explore-area-item {
+    display: flex;
+    flex-direction: column;
+    font-family: SST,helvetica,arial,sans-serif;
+    color:#333;
+} 
+.explore-area-item img {
+    width: 275px;
+    height: 200px;
+    object-fit: cover;
+
+} 
+.explore-area-item h1 {
+    font-size:2rem;
+    font-weight: lighter;
+}  
+.explore-area-item p {
+    font-size:1rem;
+    font-weight: lighter;
+    width: 280px;
+} 
+.explore-area-button {
+    background-color: #0070D1;
+    color: #FFF;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight:bold;
+    font-size: .75rem;
+    width: fit-content;
+    margin-top: 1rem;
+} 
+
+.psplus-container {
+    background-color:#C1BDBC;
+    background-image: url('../assets/img/deel4/ps-plus-background-art.jfif');
+    background-size:contain;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.psplus-container-content {
+
+    display: flex;
+    flex-direction: column;
+    color:#000;
+    padding: 6rem;
+    padding-top:13rem;
+    flex: 0 0 50rem;
+    font-size: 1rem;
+}
+
+.psplus-container-content p {
+    width: fit-content;
+    margin-bottom:2rem;
+}
+
+.psplus-container-content img {
+    width:400px;
+    margin-bottom:3rem;
+}
+
+.psplus-container-banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.psplus-container-banner img {
+    display: flex;
+    height: 680px;
+}
+.psplus-container-button {
+    color: #0070D1;
+    background-color:#DEDEDE;
+    width:fit-content;
+    padding:.5rem;
+    border-radius:1rem;
+    font-weight:bold;
+}
+
+.savings-container {
+    background-color: #FFF;
+}
+.savings-header {
+
+    padding: 5rem;
+    text-align:center;
+}
+.savings-content {
+}
+.savings-content-item {
+
+}
